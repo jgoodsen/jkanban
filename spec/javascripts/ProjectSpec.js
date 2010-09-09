@@ -1,15 +1,18 @@
 
 describe("Project", function() {
   var project;
-  var song;
 
   beforeEach(function() {
   });
 
-  it("should be able to play a Song", function() {
-      var project = new Project(99);
-      expect(project.id).toEqual(99);
-      replaceNextXhr({id:22});
+  it("constructor", function() {
+      expect(new Project(99).id).toEqual(99);
+      expect(new Project(99).cards).toEqual([]);
   });
+
+  xdescribe("function Cards()", function(){
+      it("should make an ajax request to retrieve the cards", function() {
+      })
+  })
 
 });
