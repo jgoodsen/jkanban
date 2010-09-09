@@ -12,8 +12,7 @@
 #
 src_files:
     - public/javascripts/**/*.js
-    - spec/javascripts/jasmine-0.11.1/jasmine.js
-
+    - spe
 # stylesheets
 #
 # Return an array of stylesheet filepaths relative to src_dir to include before jasmine specs.
