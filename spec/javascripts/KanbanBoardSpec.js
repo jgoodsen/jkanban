@@ -14,7 +14,7 @@ describe("KanbanBoard", function() {
 
     it("should add swimlanes", function() {
         spyOn($.fn, 'AddSwimLane');
-        board.KanbanBoard(Fixtures.simpleBoardConfig);
+        board.KanbanBoard(BoardFixtures.simpleBoardConfig);
         expect($.fn.AddSwimLane).toHaveBeenCalled();
 
     })

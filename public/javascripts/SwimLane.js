@@ -20,8 +20,8 @@ $.fn.AddSwimLane = function(options) {
   })
 
 
-  var swimlane = $('<dl class="kanban_swimlane"/>');
-  var header = $('<dt class="kanban_swimlane_header"/>');
+  var swimlane = $('<div class="kanban_swimlane"/>');
+  var header = $('<div class="kanban_swimlane_header"/>');
   swimlane.append(header);
   swimlane.append(content);
 

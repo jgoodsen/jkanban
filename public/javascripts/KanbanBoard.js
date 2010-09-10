@@ -1,11 +1,10 @@
 $.fn.KanbanBoard = function(options) {
 
     var defaults = {
+        projectJson:{},
         swimlanes:[],
-        cards: [],
-        users: [],
         swimlaneAssignments: [],
-        showControlPanel: true
+        showControlPanel: false
     };
     var opts = $.extend(defaults, options);
 
@@ -20,8 +19,8 @@ $.fn.KanbanBoard = function(options) {
         $.each(opts.swimlanes, function(i, swimlane) {
             html.AddSwimLane({
                 swimlane: swimlane,
-                cards: opts.cards,
-                users: opts.users,
+                cards: opts.projectJson.cards,
+                users: opts.projectJson.users,
                 swimlaneAssignments: opts.swimlaneAssignments
             })
         })
@@ -35,9 +34,18 @@ $.fn.KanbanBoard = function(options) {
     });
 
     function makeControlPanel() {
+        var content = $('<div class="control_panel_content"/>');
+
+        var cardTypesForm = $('<fieldset/>');
+        cardTypesForm.append('<legend>Card Types</legend>');
+        $.each(opts.projectJson.cardTypes, function(i, cardType) {
+            cardTypesForm.append('<input type="checkbox"/>' + cardType.name);
+        });
+        content.append(cardTypesForm);
+
         var html = $('<div class="kanban_swimlane control_panel"/>');
         html.append('<div class="control_panel_header"><h1>Control Panel</h1></div>');
-        html.append('<div class="control_panel_content">... content ...</div>');
+        html.append(content);
         return html;
     }
 

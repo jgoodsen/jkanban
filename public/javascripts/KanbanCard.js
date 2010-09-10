@@ -23,7 +23,7 @@ $.fn.AddKanbanCard = function(options) {
     header.append('<div class="expand">Expand/Collapse</div>');
     header.append('<div class="kanban_card_title">' + opts.card.title + '</div>');
 
-    var html = $('<dt class="kanban_card"/>');
+    var html = $('<div class="kanban_card"/>');
     html.append(header);
     self.append(html);
 
