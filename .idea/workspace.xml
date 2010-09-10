@@ -12,19 +12,19 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" afterPath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery.js" afterPath="" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_222222_256x240.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ffffff_256x240.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" afterPath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/public/lib/jquery.js" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" afterPath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
@@ -59,7 +59,7 @@
       <file leaf-file-name="KanbanCard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="52" selection-start="722" selection-end="743" vertical-scroll-proportion="0.0">
+            <state line="31" column="22" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -68,7 +68,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/themes/default/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="18" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.23295455">
+            <state line="86" column="23" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.52272725">
               <folding />
             </state>
           </provider>
@@ -728,14 +728,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="52" selection-start="722" selection-end="743" vertical-scroll-proportion="0.0">
+        <state line="31" column="22" selection-start="1057" selection-end="1057" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/themes/default/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="18" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.23295455">
+        <state line="86" column="23" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.52272725">
           <folding />
         </state>
       </provider>

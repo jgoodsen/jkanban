@@ -61,6 +61,8 @@
 .kanban_card {
     min-height: 40px;
     border: 1px solid #999;
+    float: left;
+    width:100%;
     background: #FFFFFF url(kanban_card_header_background.png) repeat-x scroll 0 0;
 }
 .kanban_card_title {
@@ -75,13 +77,14 @@
     margin-left:0px;
     margin-top: 24px;
 }
-
 .kanban_card_gravatars {
     float: right;
 }
 .gravatar {
     float: left;
     border: 1px #999 solid;
+    margin-top: -1px;
+    margin-right: -1px;
 }
 
 .unknown_gravatar {
@@ -92,6 +95,14 @@
     text-align: center;
 }
 
+
+.kanban_card_body {
+   width:100%;
+    min-height: 60px;
+    background: #EEE;
+    float: left;
+}
+/* Collapse/Expand Arrows */
 .expand {
     background-position: left center;
     background: transparent url(expand-collapse.png) no-repeat scroll left center;
