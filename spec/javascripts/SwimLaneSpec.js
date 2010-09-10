@@ -16,7 +16,7 @@ describe("SwimLane", function(){
         board.AddSwimLane({
             swimlane: config.swimlanes[0],
             cards: config.cards,
-            swimlane_assignments: config.swimlane_assignments
+            swimlaneAssignments: config.swimlaneAssignments
         })
         expect($.fn.AddKanbanCard).toHaveBeenCalled();
     })

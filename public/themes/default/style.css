@@ -1,6 +1,8 @@
 #content {
     float: left;
     height: 800px;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .kanban_board {
@@ -17,12 +19,19 @@
     background-color: #EEEEEE;
     border: 1px solid #CCCCCC;
     float: left;
-    height: 100%;
     margin: 6px;
     width: 300px;
-    min-height: 100%;
 }
 
+.kanban_swimlane_header {
+    height: 60px
+}
+
+.kanban_card {
+    height: 150px;
+    background: yellow;
+    border: 1px solid #999;
+}
 
 a.expand {
     background-position: left center;

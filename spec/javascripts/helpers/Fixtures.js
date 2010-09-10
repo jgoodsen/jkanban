@@ -14,7 +14,7 @@ var Fixtures = {
              {id:102, title:'Card Three'}
          ],
 
-         swimlane_assignments: [
+         swimlaneAssignments: [
              {card_id: 100, swimlane_id: 20},
              {card_id: 101, swimlane_id: 21},
              {card_id: 102, swimlane_id: 22}
