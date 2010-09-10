@@ -4,7 +4,8 @@ $.fn.KanbanBoard = function(options) {
         swimlanes:[],
         cards: [],
         users: [],
-        swimlaneAssignments: []
+        swimlaneAssignments: [],
+        showControlPanel: true
     };
     var opts = $.extend(defaults, options);
 
@@ -24,10 +25,20 @@ $.fn.KanbanBoard = function(options) {
                 swimlaneAssignments: opts.swimlaneAssignments
             })
         })
+        if (opts.showControlPanel) {
+            var panel = makeControlPanel();
+            html.append(panel);
+        }
         $this.append(html);
 
 
     });
 
+    function makeControlPanel() {
+        var html = $('<div class="kanban_swimlane control_panel"/>');
+        html.append('<div class="control_panel_header"><h1>Control Panel</h1></div>');
+        html.append('<div class="control_panel_content">... content ...</div>');
+        return html;
+    }
 
 }

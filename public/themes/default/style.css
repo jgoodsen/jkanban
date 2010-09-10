@@ -21,6 +21,30 @@
     float: left;
     margin: 6px;
     width: 300px;
+    height:100%;
+}
+
+.kanban_swimlane.control_panel {
+    width: 350px;
+    background-color: #FFFFFF;
+    border: 1px solid blue;
+    height: 300px;
+}
+.control_panel_header {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    background-color: #EEEEEE;
+    height: 60px;
+}
+.control_panel_content {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    height:100%;
+}
+.control_panel h1 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top:8px;
 }
 
 .kanban_swimlane_header {
@@ -28,23 +52,52 @@
 }
 
 .kanban_card {
-    height: 150px;
-    background: yellow;
+    min-height: 50px;
     border: 1px solid #999;
+    background: #FFFFFF url(kanban_card_header_background.png) repeat-x scroll 0 0;
+}
+.kanban_card_title {
+    padding: 4px;
 }
 
-a.expand {
+.kanban_card_header {
+    float: left;
+    width: 100%;
+}
+.kanban_card_header .expand {
+    margin-left:5px;
+    margin-top:18px;
+}
+
+.kanban_card_gravatars {
+    float: right;
+}
+.gravatar {
+    float: left;
+    border: 1px #999 solid;
+}
+
+.unknown_gravatar {
+    width:30px;
+    height:30px;
+    border: 1px #999 solid;
+    font-size: 12px;
+    text-align: center;
+}
+
+.expand {
     background-position: left center;
+    background: transparent url(expand-collapse.png) no-repeat scroll left center;
 }
 
-a.collapse {
+.collapse {
     background-position: right center;
+    background: transparent url(expand-collapse.png) no-repeat scroll right center;
 }
 
-a.expand, a.collapse {
+.expand, .collapse {
     -moz-background-clip: border;
     -moz-background-inline-policy: continuous;
-    background: transparent url(expand-collapse.png) no-repeat scroll center center;
     display: block;
     float: left;
     height: 12px;
