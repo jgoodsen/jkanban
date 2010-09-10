@@ -20,15 +20,19 @@ $.fn.AddKanbanCard = function(options) {
     header.append(gravatars);
 
 
-    header.append('<div class="expand">Expand/Collapse</div>');
+    header.append('<div class="expand_collapse_arrow expand">Expand/Collapse</div>');
     header.append('<div class="kanban_card_title">' + opts.card.title + '</div>');
-
     var html = $('<div class="kanban_card"/>');
 
     html.append(header);
 
-    self.append(html);
+    header.find(".expand_collapse_arrow").click(function() {
+       var self = $(this);
+       self.toggleClass("expand");
+       self.toggleClass("collapse");
+    });
 
+    self.append(html);
 
     function fullName(user) {
         return user.firstName + " " + user.lastName;

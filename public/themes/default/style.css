@@ -59,7 +59,7 @@
 }
 
 .kanban_card {
-    min-height: 50px;
+    min-height: 40px;
     border: 1px solid #999;
     background: #FFFFFF url(kanban_card_header_background.png) repeat-x scroll 0 0;
 }
@@ -71,9 +71,9 @@
     float: left;
     width: 100%;
 }
-.kanban_card_header .expand {
-    margin-left:5px;
-    margin-top:18px;
+.kanban_card_header .expand_collapse_arrow {
+    margin-left:0px;
+    margin-top: 24px;
 }
 
 .kanban_card_gravatars {
