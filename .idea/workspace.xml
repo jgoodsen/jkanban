@@ -5,16 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4301a48-d1ae-4b14-97d6-787d993c9018" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/lib/jquery.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" afterPath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_222222_256x240.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" afterPath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/style.css" afterPath="$PROJECT_DIR$/public/themes/default/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/SwimLane.js" afterPath="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" afterPath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_ffffff_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" afterPath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/lib/jquery.js" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" afterPath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-icons_228ef1_256x240.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="jkanban.iws" />
@@ -41,7 +59,7 @@
       <file leaf-file-name="KanbanCard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="22" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
+            <state line="28" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -56,19 +74,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KanbanBoardSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="48" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SwimLane.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="SwimLane.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/SwimLane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="43" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+            <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.80701756">
               <folding />
             </state>
           </provider>
@@ -83,10 +92,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSpec.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="UserSpec.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/javascripts/models/UserSpec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="77" selection-start="158" selection-end="158" vertical-scroll-proportion="0.067669176">
+            <state line="3" column="77" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -95,7 +104,34 @@
       <file leaf-file-name="simple-kanban.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="60" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-12.0">
+            <state line="29" column="51" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-16.571428">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jquery-ui-1.8.4.custom.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jasmine.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,15 +141,6 @@
         <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="30" column="54" selection-start="1603" selection-end="1603" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/default/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="28" selection-start="625" selection-end="625" vertical-scroll-proportion="-10.846154">
               <folding />
             </state>
           </provider>
@@ -157,18 +184,18 @@
         <option value="$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" />
         <option value="$PROJECT_DIR$/public/javascripts/models/gravatar.js" />
-        <option value="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
         <option value="$PROJECT_DIR$/spec/javascripts/KanbanCardSpec.js" />
         <option value="$PROJECT_DIR$/public/lib/MD5.js" />
         <option value="$PROJECT_DIR$/public/javascripts/models/User.js" />
-        <option value="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
         <option value="$PROJECT_DIR$/public/themes/default/style.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
         <option value="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
+        <option value="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
+        <option value="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
       </list>
     </option>
   </component>
@@ -381,6 +408,84 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-ui-1.8.4.custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-ui-1.8.4.custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery-ui-1.8.4.custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui-lightness" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="jasmine-0.11.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -516,10 +621,10 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3283237" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15260115" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19365285" sideWeight="0.6716763" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19365285" sideWeight="0.8473988" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -563,24 +668,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="536" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/models/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="77" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/KanbanCardSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="81" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/models/ProjectSpec.js">
@@ -609,13 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="22" selection-start="861" selection-end="861" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="48" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
@@ -630,9 +713,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="60" selection-start="1080" selection-end="1080" vertical-scroll-proportion="-12.0">
+        <state line="6" column="72" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/models/UserSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="77" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -644,23 +734,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="51" selection-start="1467" selection-end="1467" vertical-scroll-proportion="-16.571428">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="913" selection-end="913" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/SwimLane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="43" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="72" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/models/UserSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="77" selection-start="158" selection-end="158" vertical-scroll-proportion="0.067669176">
+        <state line="47" column="0" selection-start="1271" selection-end="1271" vertical-scroll-proportion="0.80701756">
           <folding />
         </state>
       </provider>
