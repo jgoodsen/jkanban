@@ -12,6 +12,7 @@
 #
 src_files:
     - public/lib/jquery.js
+    - public/lib/MD5.js
     - public/javascripts/**/*.js
 
 # stylesheets

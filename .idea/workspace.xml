@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="e4301a48-d1ae-4b14-97d6-787d993c9018" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" afterPath="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/themes/default/style.css" afterPath="$PROJECT_DIR$/public/themes/default/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" afterPath="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/SwimLane.js" afterPath="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/lib/MD5.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/models/User.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" afterPath="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" afterPath="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/javascripts/KanbanCardSpec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/jgoodsen.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/jgoodsen.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" afterPath="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/SwimLane.js" afterPath="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="jkanban.iws" />
@@ -36,46 +40,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" nonProjectFilesColor="ffffe4" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="KanbanBoardSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="395" selection-end="395" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simple-kanban.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="105" selection-start="263" selection-end="263" vertical-scroll-proportion="-3.4285715">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/themes/default/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="21" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Fixtures.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="28" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="KanbanBoard.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanBoard.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="22" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+            <state line="2" column="4" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +52,61 @@
       <file leaf-file-name="KanbanCard.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="4" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+            <state line="25" column="48" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="simple-kanban.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="55" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-10.238095">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jasmine.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/models/User.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProjectSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/javascripts/models/ProjectSpec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSpec.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/javascripts/models/UserSpec.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="15" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MD5.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/lib/MD5.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="21" selection-start="2776" selection-end="2786" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,16 +115,16 @@
       <file leaf-file-name="SwimLane.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/SwimLane.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.15911601">
+            <state line="16" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.4127764">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SwimLaneSpec.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js">
+      <file leaf-file-name="KanbanBoard.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanBoard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="40" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+            <state line="5" column="18" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -142,21 +164,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/javascripts/ProjectSpec.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/board.js" />
-        <option value="$PROJECT_DIR$/spec/javascripts/models/ProjectSpec.js" />
-        <option value="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
-        <option value="$PROJECT_DIR$/spec/javascripts/BoardSpec.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/Board.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/helpers/test_cards.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/KanbanBoardSpec.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" />
-        <option value="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
         <option value="$PROJECT_DIR$/public/themes/default/style.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js" />
         <option value="$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/models/gravatar.js" />
+        <option value="$PROJECT_DIR$/spec/javascripts/support/jasmine.yml" />
+        <option value="$PROJECT_DIR$/spec/javascripts/KanbanCardSpec.js" />
+        <option value="$PROJECT_DIR$/public/lib/MD5.js" />
+        <option value="$PROJECT_DIR$/spec/javascripts/models/UserSpec.js" />
+        <option value="$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html" />
+        <option value="$PROJECT_DIR$/public/javascripts/KanbanBoard.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/KanbanCard.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/models/User.js" />
         <option value="$PROJECT_DIR$/public/javascripts/SwimLane.js" />
       </list>
     </option>
@@ -187,8 +209,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,6 +264,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="support" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -344,6 +386,54 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jasmine-0.11.1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jkanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -365,18 +455,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="preferences.lookFeel" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugSession" factoryName="Remote">
       <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSRemoteDebuggerConfigurationSettings>
       <method />
@@ -429,15 +522,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="4" y="22" width="1676" height="1028" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="774" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32976446" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32941177" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.67058825" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -481,35 +574,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/javascripts/models/Project.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="77" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/jasmine-0.11.1/jasmine-html.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/models/ProjectSpec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="42" selection-start="379" selection-end="379" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/jquery-mock-ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="21" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/SpecHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="536" vertical-scroll-proportion="0.0" />
@@ -529,44 +593,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/models/Project.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="105" selection-start="263" selection-end="263" vertical-scroll-proportion="-3.4285715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanBoard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="22" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
+        <state line="27" column="77" selection-start="588" selection-end="588" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/SwimLaneSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="40" selection-start="629" selection-end="629" vertical-scroll-proportion="0.0">
+        <state line="1" column="128" selection-start="33" selection-end="33" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/KanbanCardSpec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="4" selection-start="325" selection-end="325" vertical-scroll-proportion="0.0">
+        <state line="2" column="81" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/support/jasmine.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="20" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/models/ProjectSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanBoard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="18" selection-start="120" selection-end="120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/simple-kanban/simple-kanban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="55" selection-start="1074" selection-end="1074" vertical-scroll-proportion="-10.238095">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/javascripts/helpers/Fixtures.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="28" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0">
+        <state line="2" column="4" selection-start="22" selection-end="22" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/KanbanCard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="48" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/lib/MD5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="21" selection-start="2776" selection-end="2786" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/javascripts/models/UserSpec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/models/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="9" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/SwimLane.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="318" selection-end="318" vertical-scroll-proportion="0.15911601">
+        <state line="16" column="20" selection-start="434" selection-end="434" vertical-scroll-proportion="0.4127764">
           <folding />
         </state>
       </provider>

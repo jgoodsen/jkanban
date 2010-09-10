@@ -3,6 +3,7 @@ $.fn.KanbanBoard = function(options) {
     var defaults = {
         swimlanes:[],
         cards: [],
+        users: [],
         swimlaneAssignments: []
     };
     var opts = $.extend(defaults, options);
@@ -19,6 +20,7 @@ $.fn.KanbanBoard = function(options) {
             html.AddSwimLane({
                 swimlane: swimlane,
                 cards: opts.cards,
+                users: opts.users,
                 swimlaneAssignments: opts.swimlaneAssignments
             })
         })
