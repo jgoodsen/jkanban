@@ -6,7 +6,7 @@ $.fn.AddSwimLane = function(options) {
         swimlaneAssignments: []
     };
     var opts = $.extend(defaults, options);
-    var html = $('<div class="swimlane"/>');
+    var html = $('<div class="kanban_swimlane"/>');
     $.each(opts.cards, function(i, card){
         html.AddKanbanCard(card);
     })

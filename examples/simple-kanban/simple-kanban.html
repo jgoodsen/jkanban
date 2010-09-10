@@ -1,0 +1,32 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>jKanban Demo</title>
+
+    <link type="text/css" rel="stylesheet" media="screen" href="../../public/themes/default/style.css">
+
+    <!-- include helper files here... -->
+    <script type="text/javascript" src="../../public/lib/jquery.js"></script>
+    <script type="text/javascript" src="../../spec/javascripts/helpers/Fixtures.js"></script>
+
+    <!-- include source files here... -->
+    <script type="text/javascript" src="../../public/javascripts/KanbanBoard.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/KanbanCard.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/SwimLane.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('#content').KanbanBoard(Fixtures.simpleBoardConfig)
+        })
+    </script>
+</head>
+<body>
+
+<div id="content">
+
+</div>
+
+</body>
+</html>
+  

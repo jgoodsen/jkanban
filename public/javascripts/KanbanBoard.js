@@ -15,6 +15,7 @@ $.fn.KanbanBoard = function(options) {
         var o = $.meta ? $.extend({}, opts, $this.data()) : opts;
 
         var html = $('<div class="kanban_board"/>');
+        html.append()
         $.each(opts.swimlanes, function(i, swimlane) {
             html.AddSwimLane({
                 swimlane: swimlane,

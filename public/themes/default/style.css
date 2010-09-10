@@ -1,0 +1,45 @@
+#content {
+    float: left;
+    height: 800px;
+}
+
+.kanban_board {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.kanban_swimlane {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 100%;
+    margin: 6px;
+    width: 300px;
+    min-height: 100%;
+}
+
+
+a.expand {
+    background-position: left center;
+}
+
+a.collapse {
+    background-position: right center;
+}
+
+a.expand, a.collapse {
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    background: transparent url(expand-collapse.png) no-repeat scroll center center;
+    display: block;
+    float: left;
+    height: 12px;
+    margin-right: 5px;
+    text-indent: -999em;
+    width: 12px;
+}

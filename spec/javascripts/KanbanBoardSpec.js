@@ -12,20 +12,11 @@ describe("KanbanBoard", function() {
         expect($('#kanban .kanban_board').hasClass("kanban_board")).toEqual(true);
     })
 
-    it("should create the swimlanes", function() {
+    it("should add swimlanes", function() {
+        spyOn($.fn, 'AddSwimLane');
         board.KanbanBoard(Fixtures.simpleBoardConfig);
-        var swimlanes = board.find(".swimlane");
-        expect(swimlanes.size()).toEqual(3);
-    })
-
-    it("should create the swimlanes", function() {
-
-        spyOn($.fn, 'AddSwimLane').andCallThrough();
-        board.KanbanBoard(Fixtures.simpleBoardConfig);
-
         expect($.fn.AddSwimLane).toHaveBeenCalled();
-        var swimlanes = board.find(".swimlane");
-        expect(swimlanes.size()).toEqual(3);
+
     })
 
 })
