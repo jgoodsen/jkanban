@@ -20,7 +20,7 @@
     border: 1px solid #CCCCCC;
     float: left;
     margin: 6px;
-    width: 300px;
+    width: 260px;
     height:100%;
 }
 .kanban_swimlane_content {
@@ -31,7 +31,7 @@
 }
 
 .kanban_swimlane.control_panel {
-    width: 350px;
+    width: 250px;
     background: #FFFFFF url(control_panel_background.png) repeat-x scroll 0 0;
     border: 1px solid blue;
     height: 300px;
@@ -90,9 +90,10 @@
 .unknown_gravatar {
     width:30px;
     height:30px;
-    border: 1px #999 solid;
-    font-size: 12px;
+    border: 1px #aaa solid;
+    font-size: 1.8em;
     text-align: center;
+    padding-top: 4px;
 }
 
 

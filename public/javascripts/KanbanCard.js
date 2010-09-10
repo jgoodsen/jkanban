@@ -16,7 +16,7 @@ $.fn.AddKanbanCard = function(options) {
         gravatars.append('<img class="gravatar"  src="' + get_gravatar(owner, 30) + '" title="' + fullName(owner) + '"/>');
     })
     if (gravatars.children().size() == 0) {
-        gravatars.append('<div class="gravatar unknown_gravatar">' + '...' + '</div>');
+        gravatars.append('<div class="gravatar unknown_gravatar">' + '?' + '</div>');
     }
     header.append(gravatars);
     header.append('<div class="expand_collapse_arrow expand">Expand/Collapse</div>');
