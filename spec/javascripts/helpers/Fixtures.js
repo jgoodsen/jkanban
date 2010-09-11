@@ -7,7 +7,17 @@ var ProjectFixtures = {
         ],
 
         cards: [
-            {id:100, card_type_id: 204, title:'Now is the time for all good men to come to the aid of their country', owners: [10, 11]},
+            {id:100,
+              card_type_id: 204,
+              title:'Now is the time for all good men to come to the aid of their country',
+              owners: [10, 11],
+              tasks: [
+                {id: 601, title: 'Do XYZ', owners: [11,12], state: "done"},
+                {id: 602, title: 'Do Another Thing', owners: [11], state: "not_started"},
+                {id: 603, title: 'If you do not do this before your mother gets home...', owners: [10], state: "started"},
+                {id: 604, title: 'Glad I did this one before mom got home', owners: [10,11], state: "done"}
+              ]
+            },
             {id:101, card_type_id: 200, title:'Card Two', owners: [12]},
             {id:102, card_type_id: 201, title:'Card Three', owners: []},
             {id:103, card_type_id: 202, title:'Now was the time for all good men to come to the aid of their country', owners: [10, 11]},

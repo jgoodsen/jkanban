@@ -103,6 +103,12 @@
     background: #EEE;
     float: left;
 }
+
+
+.kanban_card_task {
+  color: #000;
+}
+
 /* Collapse/Expand Arrows */
 .expand {
     background-position: left center;
