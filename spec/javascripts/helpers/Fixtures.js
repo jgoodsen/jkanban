@@ -12,10 +12,10 @@ var ProjectFixtures = {
               title:'Now is the time for all good men to come to the aid of their country',
               owners: [10, 11],
               tasks: [
-                {id: 601, title: 'Do XYZ', owners: [11,12], state: 0},
+                {id: 601, title: 'Do XYZ', owners: [11,11], state: 0},
                 {id: 602, title: 'Do Another Thing', owners: [11], state: 1},
-                {id: 603, title: 'If you do not do this before your mother gets home...', owners: [10], state: 0},
-                {id: 604, title: 'Glad I did this one before mom got home', owners: [10,11], state: 2}
+                {id: 603, title: 'If you do not do this before your mother gets home...', owners: [10], state: 2},
+                {id: 604, title: 'Glad I did this one before mom got home', owners: [10,11], state: 3}
               ]
             },
             {id:101, card_type_id: 200, title:'Card Two', owners: [12]},
@@ -41,9 +41,9 @@ var BoardFixtures = {
         projectJson: ProjectFixtures.simpleProjectJson,
         showControlPanel: true,
         swimlanes: [
-            {id: 20, name: "Ready"},
-            {id: 21, name: "In Progress"},
-            {id: 22, name: "Done"}
+            {id: 20, name: "Ready", wip_limit: 3},
+            {id: 21, name: "In Progress", wip_limit: 3},
+            {id: 22, name: "Done", wip_limit: 3}
         ],
         swimlaneAssignments: [
             {card_id: 100, swimlane_id: 20},

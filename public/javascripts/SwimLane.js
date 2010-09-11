@@ -28,7 +28,19 @@ $.fn.AddSwimLane = function(options) {
 
     var swimlane = $('<div class="kanban_swimlane"/>');
     var header = $('<div class="kanban_swimlane_header"/>');
+    header.append('<span>' + opts.swimlane.name + '</span>');
+    var wip_limit = $('<div class="wip_limit">' + opts.swimlane.wip_limit + '</div>');
+    wip_limit.editInPlace({
+        callback: function(unused, value, original) {
+            var intValue = parseInt(value);
+            if (value == (intValue + ""))
+                return value;
+            return original; // could not convert to an int, return the original value
+        }
+    });
+    header.append(wip_limit);
     swimlane.append(header);
+
     swimlane.append(content);
 
     self.append(swimlane);
@@ -46,8 +58,9 @@ $.fn.AddSwimLane = function(options) {
 
     function CardDragged(x, ui) {
 
-    };
+    }
 
+    ;
 
 
 }
