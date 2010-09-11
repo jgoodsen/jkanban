@@ -1,5 +1,26 @@
-//TODO: For some reason jquery.editinplace.js would not load properly  so I copied it into this file - bad hack
+/*
 
+A jQuery edit in place plugin
+
+Version 2.2.0
+
+Authors:
+	Dave Hauenstein
+	Martin H√§cker <spamfaenger [at] gmx [dot] de>
+
+Project home:
+	http://code.google.com/p/jquery-in-place-editor/
+
+Patches with tests welcomed! For guidance see the tests at </spec/unit/spec.js>. To submit, attach them to the bug tracker.
+
+License:
+This source file is subject to the BSD license bundled with this package.
+Available online: {@link http://www.opensource.org/licenses/bsd-license.php}
+If you did not receive a copy of the license, and are unable to obtain it,
+
+*/
+
+$(function() {
 $.fn.editInPlace = function(options) {
 
 	var settings = $.extend({}, $.fn.editInPlace.defaults, options);
@@ -28,8 +49,8 @@ $.fn.editInPlace.defaults = {
 	bg_out:				"transparent", // string: background color on restore from hover
 	hover_class:		"",  // string: class added to root element during hover. Will override bg_over and bg_out
 	show_buttons:		false, // boolean: will show the buttons: cancel or save; will automatically cancel out the onBlur functionality
-	save_button:		'<button class="inplace_save">Save</button>', // string: image button tag to use as “Save” button
-	cancel_button:		'<button class="inplace_cancel">Cancel</button>', // string: image button tag to use as “Cancel” button
+	save_button:		'<button class="inplace_save">Save</button>', // string: image button tag to use as ‚ÄúSave‚Äù button
+	cancel_button:		'<button class="inplace_cancel">Cancel</button>', // string: image button tag to use as ‚ÄúCancel‚Äù button
 	params:				"", // string: example: first_name=dave&last_name=hauenstein extra paramters sent via the post request to the server
 	field_type:			"text", // string: "text", "textarea", or "select";  The type of form field that will appear on instantiation
 	default_text:		"(Click here to add text)", // string: text to show up if the element that has this functionality is empty
@@ -618,107 +639,4 @@ function hasContent(something) {
 	return true;
 }
 
-// -- end of jquery.editinplace.js copy hack
-
-
-
-
-
-$(function(){
-$.fn.AddKanbanCard = function(options) {
-
-    var defaults = {
-        card: null
-    };
-    var opts = $.extend(defaults, options);
-
-    var self = $(this);
-
-    var html = $('<div class="kanban_card"/>');
-
-    var header = $('<div class="kanban_card_header"/>');
-    var gravatars = $('<div class="kanban_card_gravatars"/>');
-    $.each(opts.card.owners, function(i, owner_id) {
-        var owner = User.findById(owner_id, opts.users);
-        gravatars.append('<img class="gravatar"  src="' + get_gravatar(owner, 30) + '" title="' + fullName(owner) + '"/>');
-    })
-    if (gravatars.children().size() == 0) {
-        gravatars.append('<div class="gravatar unknown_gravatar">' + '?' + '</div>');
-    }
-    header.append(gravatars);
-    header.append('<div class="expand_collapse_arrow expand">Expand/Collapse</div>');
-    header.append('<div class="kanban_card_title">' + opts.card.title + '</div>');
-
-
-    html.append(header);
-
-    var body = $('<div class="kanban_card_body"/>').css("display", "none");
-    if (opts.card.tasks != undefined) {
-        $.each(opts.card.tasks, function(i, task) {
-            body.append(makeTask(task));
-        })
-    }
-
-
-    html.append(body);
-
-    self.append(html);
-
-    header.find(".expand_collapse_arrow").click(function() {
-        var arrowToggle = $(this);
-        if (arrowToggle.hasClass("expand")) {
-            $(this).parents(".kanban_card").find(".kanban_card_body").show();
-        } else {
-            $(this).parents(".kanban_card").find(".kanban_card_body").hide();
-        }
-        $(this).toggleClass("expand").toggleClass("collapse");
-    });
-
-    function fullName(user) {
-        return user.firstName + " " + user.lastName;
-    }
-
-    function makeTask(task) {
-        var html = $('<div class="kanban_card_task"/>');
-        html.append('<div class="state"/>');
-        html.append('<div class="title"/>');
-        html.find('.title').html(task.title).editInPlace({
-            callback: function(unused, enteredText) {
-                return enteredText;
-            }
-        });
-
-        function imageForTaskState(state) {
-            switch (state) {
-                case 1:
-                    return "started.jpg"
-                    break;
-                case 2:
-                    return "completed.jpg"
-                    break;
-                default:
-                    return "not-started.jpg"
-            }
-        }
-
-        html.find('.state').html(imageForTaskState(task.state));
-        html.find('.state').editInPlace({
-            callback: function(unused, enteredText) {
-                return enteredText;
-            },
-            // url: "./server.php",
-            field_type: "select",
-            select_options: "Change me to this, No way:no"
-        });
-
-        return html;
-    }
-}
-
-function get_gravatar(user, size) {
-    var size = size || 80;
-    var randomNumber = Math.floor(Math.random() * 1000); // random url the browser from caching
-    return 'http://www.gravatar.com/avatar/' + user.gravatarHash + '.jpg?s=' + size + '&' + randomNumber;
-}
-
-})
+})(jQuery);

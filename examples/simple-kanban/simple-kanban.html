@@ -4,11 +4,12 @@
 <head>
     <title>jKanban Demo</title>
 
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/themes/default/style.css?23d4">
+    <link type="text/css" rel="stylesheet" media="screen" href="../../public/themes/default/style.css?2d3dddf4">
 
 
     <!-- include jquery ui here... -->
     <script type="text/javascript" src="../../public/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js"></script>
+    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery.editinplace.js">
     <script type="text/javascript" src="../../public/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
     <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
 
@@ -28,6 +29,12 @@
             $('#content').KanbanBoard(BoardFixtures.simpleBoardConfig)
         })
     </script>
+    <style type="text/css">
+        #content {
+            float: left;
+            height: 800px;
+        }
+    </style>
 </head>
 <body>
 

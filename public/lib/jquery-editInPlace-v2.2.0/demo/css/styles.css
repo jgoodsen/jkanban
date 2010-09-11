@@ -1,0 +1,37 @@
+/*
+ * Another In Place Editor - a jQuery edit in place plugin
+ *
+ * Copyright (c) 2009 Dave Hauenstein
+ *
+ * License:
+ * This source file is subject to the BSD license bundled with this package.
+ * Available online: {@link http://www.opensource.org/licenses/bsd-license.php}
+ * If you did not receive a copy of the license, and are unable to obtain it,
+ * email davehauenstein@gmail.com,
+ * and I will send you a copy.
+ *
+ * Project home:
+ * http://code.google.com/p/jquery-in-place-editor/
+ *
+ */
+
+body{
+    margin: 20px 40px;
+    font-family: arial, sans-serif;
+    font-size: 12px;
+}
+a:link, a:visited{
+    color: #3456b9;
+}
+code{
+    display: block;
+    background: #ddd;
+    border: solid 2px #666;
+    line-height: 15px;
+}
+div{
+    margin: 10px 0;
+}
+#container{
+    width: 650px;
+}

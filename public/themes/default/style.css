@@ -1,14 +1,10 @@
-#content {
-    float: left;
-    height: 800px;
-    font-size: 13px;
-    font-weight: 900;
-}
 
 .kanban_board {
     float: left;
     width: 100%;
     height: 100%;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .kanban_swimlane {
@@ -21,12 +17,13 @@
     float: left;
     margin: 6px;
     width: 260px;
-    height:100%;
+    height: 100%;
 }
+
 .kanban_swimlane_content {
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
-    height:100%;
+    height: 100%;
     background: #FFFFFF url(swimlane_background.png) repeat-x scroll 0 0;
 }
 
@@ -43,15 +40,17 @@
     background-color: #EEEEEE;
     height: 60px;
 }
+
 .control_panel_content {
     -moz-border-radius-bottomleft: 5px;
     -moz-border-radius-bottomright: 5px;
-     height:100%;
+    height: 100%;
 }
+
 .control_panel h1 {
-  text-align: center;
-  margin-top: 0px;
-  padding-top:8px;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 8px;
 }
 
 .kanban_swimlane_header {
@@ -62,9 +61,10 @@
     min-height: 40px;
     border: 1px solid #999;
     float: left;
-    width:100%;
+    width: 100%;
     background: #FFFFFF url(kanban_card_header_background.png) repeat-x scroll 0 0;
 }
+
 .kanban_card_title {
     padding: 4px;
 }
@@ -72,14 +72,18 @@
 .kanban_card_header {
     float: left;
     width: 100%;
+    font-weight: 800;
 }
+
 .kanban_card_header .expand_collapse_arrow {
-    margin-left:0px;
+    margin-left: 0px;
     margin-top: 24px;
 }
+
 .kanban_card_gravatars {
     float: right;
 }
+
 .gravatar {
     float: left;
     border: 1px #999 solid;
@@ -88,25 +92,33 @@
 }
 
 .unknown_gravatar {
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
     border: 1px #aaa solid;
     font-size: 1.8em;
     text-align: center;
     padding-top: 4px;
 }
 
-
 .kanban_card_body {
-   width:100%;
+    width: 100%;
     min-height: 60px;
     background: #EEE;
     float: left;
+
 }
 
-
 .kanban_card_task {
-  color: #000;
+    color: #777;
+    float: left;
+    width: 100%;
+}
+
+.kanban_card_task div, .kanban_card_task input {
+    float: left;
+}
+.kanban_card_task div {
+    margin-top: 3px;
 }
 
 /* Collapse/Expand Arrows */

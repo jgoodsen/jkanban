@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+        <title>Another In-Place Editor, a jQuery Plugin by Dave Hauenstein</title>
+        <script type="text/javascript" src="../spec/support/jquery.js"></script>
+        <script type="text/javascript" src="../spec/support/jquery.ui.js"></script>
+        <script type="text/javascript" src="../../jquery.editinplace.js"></script>
+        <script type="text/javascript" src="js/demo.js"></script>
+        <link rel="stylesheet" href="./css/styles.css" type="text/css" media="screen" title="no title" charset="utf-8" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1>Another In-Place Editor, jQuery Plugin</h1>
+
+            <p>
+                For more info and downloads please see the <a href="http://code.google.com/p/jquery-in-place-editor/">google code project page.</a>.
+            </p>
+
+            <p>
+                If you'd like to see the javascript behind this page, please see <a href="./js/demo.js">js/demo.js</a>.
+            </p>
+
+            <h2>Example 1 - Standard Text box</h2>
+
+            <p id="editme1">
+                This example is with no options except for a callback that will handle the value when the edit is complete.
+            </p>
+
+            <h2>Example 2 - Text area</h2>
+
+            <p id="editme2">
+                This example shows how to call the function and display a textarea instead of a regular text box. A few other options are set as well, including an image saving icon, rows and columns for the textarea, and a different rollover color.
+            </p>
+
+            <h2>Example 3 - Select Dropdown</h2>
+
+            <p id="editme3">
+                How about a select input field so we can limit our options? Yup, just click here.
+            </p>
+            
+            <h2>Example 4 - Using a callback function to update 2 divs</h2>
+
+            <p id="editme4">
+                Edit me now!
+            </p>
+
+            <div id="updateDiv1">First div to be updated</div>
+            <div id="updateDiv2">Second div to be updated</div>
+            
+            <h2>Example 5 - Using saving animations while updating</h2>
+            
+            <p id="editme5">Edit me now!</p>
+        </div>
+    </body>
+</html>
