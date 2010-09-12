@@ -9,7 +9,7 @@ $.fn.AddSwimLane = function(options) {
     var opts = $.extend(defaults, options);
     var self = $(this);
 
-    var content = $('<div class="kanban_swimlane_content/>"');
+    var content = $('<div class="kanban_swimlane_content"/>');
     $.each(opts.cards, function(i, card_json) {
         if (isCardAssignedToThisSwimlane(card_json)) {
             content.AddKanbanCard({
