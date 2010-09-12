@@ -1,5 +1,10 @@
-jKanban is a pure jQuery plugin that will drop a Kanban board anywhere in a web page. All you need to do is supply
-a RESTful JSON web service to supply card data.
+Current Release:  pre-alpha, prototype stage
+
+jKanban is a pure jQuery plugin that will drop a Kanban board anywhere in a web page.
+All you need to do is supply a RESTful JSON web service to supply card data.
+
+  I'm developing jKanban to create a powerful, enterprise kanban board that I'm going
+  eventually drop into the hosted service at radtrack.com as an upgraded enterprise subscription option.
 
 To See The Kanban Board in action, with dummy JSON data - check out the examples directory
 
