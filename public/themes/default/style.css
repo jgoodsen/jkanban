@@ -177,18 +177,18 @@
 }
 
 .kanban_card_body {
-    padding-top: 8px;
-    padding-left: 2px;
     min-height: 60px;
-    background: #FFFFFF url(control_panel_background.png) repeat-x scroll 0 0;
+    background: #FFFFFF;
     float: left;
     border-top: 1px dashed #aaa;
 }
 
 .kanban_card_task {
+    padding-top: 6px;
     color: #777;
     float: left;
     width: 100%;
+    background: #FFFFFF;
 }
 
 .grippy {
@@ -199,6 +199,7 @@
     height: 14px;
     float: left;
     margin-right: 2px;
+    margin-left: 2px;
 }
 .kanban_card_task .state {
     width: 20px;
