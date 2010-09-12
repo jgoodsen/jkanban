@@ -88,33 +88,56 @@
     margin-left:-1px;
 }
 
-.kanban_card_hover {
-    border-color:blue;
-}
-
-.card_hover_actions .action {
-    width: 30px;
-    height: 30px;
-    float: left;
-}
-
 .card_hover_actions {
     float:none;
     position: relative;
     top: 0px;
-    left: 0px;
+    left: 20px;
     height: 30px;
     background:transparent;
     z-index:100;
-    border: 1px solid black;
 }
 
-.card_hover_actions .delete {
-    background: transparent url(task_not_started.png) no-repeat 0px 0px;
+.card_hover_actions .action {
+    float: left;
+    cursor: pointer;
+}
+
+.card_hover_actions .action.edit {
+    margin-top: 4px;
+    margin-left:0px;
+    width: 16px;
+    height: 20px;
+    background: transparent url(edit.png) no-repeat 0px 0px;
+}
+
+.card_hover_actions .action.delete {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    background: transparent url(delete.png) no-repeat 0px 0px;
+}
+
+.card_hover_actions .action.comments {
+    margin-top: 4px;
+    width: 20px;
+    height: 20px;
+    background: transparent url(comments.png) no-repeat 0px 0px;
 }
 
 .kanban_card_title {
     padding: 4px;
+    float: left;
+}
+
+.kanban_card_title .title {
+    float: left;
+    width:230px;
+}
+
+.kanban_card_title .title.editInPace-active textarea {
+    font-size: 1em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .kanban_card_header {
@@ -126,6 +149,11 @@
 .kanban_card_header .expand_collapse_arrow {
     margin-left: 0px;
     margin-top: 24px;
+}
+
+.kanban_card_header .grippy {
+    margin-left: 4px;
+    margin-top: 4px;
 }
 
 .kanban_card_gravatars {
@@ -163,7 +191,15 @@
     width: 100%;
 }
 
-
+.grippy {
+    text-indent:-999em;
+    background: transparent url(grippy.png) repeat-x scroll 0 0;
+    cursor: pointer;
+    width: 6px;
+    height: 14px;
+    float: left;
+    margin-right: 2px;
+}
 .kanban_card_task .state {
     width: 20px;
     height: 20px;
@@ -173,6 +209,10 @@
 .kanban_card_task .owner {
     float: left;
 
+}
+
+.blocked {
+    border-color: red;
 }
 
 .kanban_card_task .owner img {
@@ -210,7 +250,7 @@
 }
 
 .kanban_card_task .title {
-    width: 190px;
+    width: 185px;
     float: left;
 }
 

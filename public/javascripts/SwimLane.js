@@ -19,6 +19,7 @@ $.fn.AddSwimLane = function(options) {
         }
     })
     content.sortable({
+        handle:'.grippy',
         items: '.kanban_card',
         connectWith: '.kanban_swimlane_content',
         stop: CardDragged
