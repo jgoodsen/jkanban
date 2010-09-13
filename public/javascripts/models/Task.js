@@ -15,24 +15,24 @@ Task.last = function() {
     return last;
 }
 
-Task.findByCardId = function (id) {
-    return this.all().filter(function(item) { return item.card_id == id; })
+Task.findAllByCardId = function (card_id) {
+    return this.all().filter(function(item) { return item.card_id == card_id; })
 };
 
-//Task.findById = function(id) {
-//    return this.allTasks.filter(function(task){ return task.id == id;})[0];
-//}
-//
-//Task.nextId = function() {
-//    return this.last().id + 1;
-//}
+Task.findById = function(id) {
+    return this.allItems.filter(function(item){ return item.id == id;})[0];
+}
 
-//
-//Task.create = function(card_id) {
-//
-//    // TODO: Implement Service call and broadcast the event
-//    var newTask = {id: this.nextId(), card_id: card_id};
-//
-//    this.allTasks.push(newTask);
-//    return newTask;
-//}
+Task.nextId = function() {
+    return this.last().id + 1;
+}
+
+
+Task.create = function(opts) {
+
+    // TODO: Implement Service call and broadcast the event
+    var newTask = {id: this.nextId(), card_id: opts.card_id, title: opts.title, owners: []};
+
+    this.all().push(newTask);
+    return newTask;
+}

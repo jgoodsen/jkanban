@@ -1608,7 +1608,7 @@ $.fn.AddKanbanCard = function(options) {
     }
 
     function makeTask(task) {
-        var html = $('<div class="kanban_card_task"/>');
+        var html = $('<div class="kanban_card_task {id:"' + task.id + '}"/>');
         html.append($('<span class="grippy"/>'));
         html.append($('<span class="state"/>').addClass(classForImageState(task.state)));
         function imageForTaskOwner(task, i) {

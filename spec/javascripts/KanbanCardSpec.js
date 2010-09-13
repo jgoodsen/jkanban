@@ -18,4 +18,5 @@ describe("get_avatar", function(){
         expect(metadata.id).toEqual(card.id);
 
     })
+    
 })

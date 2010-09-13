@@ -36,7 +36,7 @@ Card.create = function() {
 // Has Many Tasks
 //
 Card.tasks = function(card_id) {
-    return Task.findByCardId(card_id);
+    return Task.findAllByCardId(card_id);
 }
 Card.createTask = function(card_id, title) {
     var newItem = Task.create({card_id: card_id, title: title});
