@@ -4,12 +4,26 @@ jKanban is a jQuery plugin that will drop a Kanban board anywhere in a web page.
 All you need to do is supply a RESTful JSON web service to supply card data.
 
 
-To See The Kanban Board in action, with dummy JSON data, simply open up the
-file examples/simple-kanban/simple-kanban.html in a browser and start playing!
+To See The Kanban Board in action, with dummy JSON data, simply open up the file
+
+    examples/simple-kanban/simple-kanban.html
+
+in a browser.
+
+
+-- This is all well tested javascript code.  See for yourself. --
 
 To run the specs:
 
     1. In a console window:  "rake jasmine"
     2. Open http://localhost:8888/ in a browser to run the tests
+
+To package up and distribute just the jKanban javascript as a package to use in other applications, use:
+
+   rake dist
+
+and then you'll have a dist/jkanban.tgz in the dist/ directory that you can distribute.
+
+
 
 Copyright (C) 2010, John Goodsen.  All Rights Reserved.
