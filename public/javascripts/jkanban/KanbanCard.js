@@ -16,7 +16,7 @@ $.fn.AddKanbanCard = function(options) {
     //
     {
         var titleBar = $('<div class="kanban_card_title"/>');
-        titleBar.append($('<span class="grippy"/>'));
+        titleBar.append($('<span class="grippy card_grippy"/>'));
         var title = $('<div class="title"/>').text(opts.card.title);
         title.editInPlace({
             callback: function(notused, value, oldValue) {
@@ -81,7 +81,7 @@ $.fn.AddKanbanCard = function(options) {
         form.ajaxForm(function() {
             var value = newTaskInput.val();
             var task = Card.createTask(opts.card.id, value);
-            form.before(makeTask(task));
+            form.parent().parent().find('.kanban_card_body_tasks').append(makeTask(task));
             newTaskInput.val('');
         });
         var outer = $('<div/>');
