@@ -1,8 +1,17 @@
 describe("User", function() {
 
-  it("should respond to findById()", function() {
-    var user = User.findById(10, BoardFixtures.simpleBoardConfig.projectJson.users);
-    expect(user.id).toEqual(10);
-  })
+    beforeEach(function() {
+        loadSimpleProjectJsonFixtures();
+    });
+
+    it("should respond to findById()", function() {
+        var user = User.findById(10);
+        expect(user.id).toEqual(10);
+    })
+
+    it("all()", function() {
+        var user = User.findById(10);
+        expect(user.id).toEqual(10);
+    })
 
 })

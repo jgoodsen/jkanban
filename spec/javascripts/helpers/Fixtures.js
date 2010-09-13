@@ -5,39 +5,35 @@ var ProjectFixtures = {
             {id: 11, email: 'eric.clapton@gmail.com', firstName: 'Eric', lastName: 'Clapton', admin: false, gravatarHash: 'a583d290ee066ff2a63b84b9d5f265c2'},
             {id: 12, email: 'axel.rose@gmail.com', firstName: 'Axl', lastName: 'Rose', admin: false, gravatarHash: 'a583d290ee066ff2a63b84b9d5f265c2'}
         ],
+        tasks: [
+            {id: 601, card_id: 100, title: 'Do XYZ', owners: [11,11], state: 0},
+            {id: 602, card_id: 100, title: 'Do Another Thing', owners: [11], state: 1},
+            {id: 603, card_id: 100, title: 'If you do not do this before your mother gets home...', owners: [10], state: 2},
+            {id: 604, card_id: 100, title: 'Glad I did this one before mom got home', owners: [10,11], state: 1, blocked: true},
+            {id: 605, card_id: 101, title: 'Do XYZ', owners: [11,11], state: 0},
+            {id: 606, card_id: 101, title: 'Do Another Thing', owners: [11], state: 1},
+            {id: 607, card_id: 101, title: 'If you do not do this before your mother gets home...', owners: [10], state: 1, blocked: true},
+            {id: 608, card_id: 101, title: 'Glad I did this one before mom got home', owners: [10,11], state: 2},
+            {id: 609, card_id: 102, title: 'Wax the car', owners: [11,11], state: 0},
+            {id: 610, card_id: 102, title: 'Change the Oil', owners: [11], state: 0},
+            {id: 611, card_id: 102, title: 'If you do not do this before your mother gets home...', owners: [10], state: 1},
+            {id: 612, card_id: 102, title: 'Rotate Tires', owners: [10,11], state: 0}
+        ],
         cards: [
             {id:100,
               card_type_id: 204,
               title:'As a store clerk, I want to be able to rent a video to a customer.',
-              owners: [10, 11],
-              tasks: [
-                {id: 601, title: 'Do XYZ', owners: [11,11], state: 0},
-                {id: 602, title: 'Do Another Thing', owners: [11], state: 1},
-                {id: 603, title: 'If you do not do this before your mother gets home...', owners: [10], state: 2},
-                {id: 604, title: 'Glad I did this one before mom got home', owners: [10,11], state: 1, blocked: true}
-              ]
+              owners: [10, 11]
             },
             {id:101,
                 card_type_id: 200,
                 title:'As a manager, I want to run a weekly sales report and submit it to Corporate headquarters.',
-                owners: [12],
-                tasks: [
-                  {id: 605, title: 'Do XYZ', owners: [11,11], state: 0},
-                  {id: 606, title: 'Do Another Thing', owners: [11], state: 1},
-                  {id: 607, title: 'If you do not do this before your mother gets home...', owners: [10], state: 1, blocked: true},
-                  {id: 608, title: 'Glad I did this one before mom got home', owners: [10,11], state: 2}
-                ]
+                owners: [12]
             },
             {id:102,
                 card_type_id: 201,
                 title:'In my spare time, I\'d better Winterize Vehicles',
-                owners: [],
-                tasks: [
-                  {id: 609, title: 'Wax the car', owners: [11,11], state: 0},
-                  {id: 610, title: 'Change the Oil', owners: [11], state: 0},
-                  {id: 611, title: 'If you do not do this before your mother gets home...', owners: [10], state: 1},
-                  {id: 612, title: 'Rotate Tires', owners: [10,11], state: 0}
-                ]
+                owners: []
             },
             {id:103,
                 card_type_id: 202,
@@ -93,3 +89,9 @@ var BoardFixtures = {
     }
 
 };
+
+function loadSimpleProjectJsonFixtures() {
+    User.allItems = ProjectFixtures.simpleProjectJson.users;
+    Card.allItems = ProjectFixtures.simpleProjectJson.cards;
+    Task.allItems = ProjectFixtures.simpleProjectJson.tasks;
+}

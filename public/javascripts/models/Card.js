@@ -1,40 +1,45 @@
 function Card() {
 }
 
-Card.allCards = [];
+Card.allItems = [];
 
 Card.all = function() {
-    return this.allCards;
+    return this.allItems;
 }
 
 Card.last = function() {
     var last;
-    Card.all().forEach(function(c) {
+    this.all().forEach(function(c) {
         last = c;
     });
     return last;
 }
 
 Card.findById = function(id) {
-    return this.allCards.filter(function(card){ return card.id == id;})[0];
+    return this.all().filter(function(item){ return item.id == id;})[0];
 }
 
 Card.nextId = function() {
     return this.last().id + 1;
 }
 
-
 Card.create = function() {
 
     // TODO: Implement Service call and broadcast the event
-    var newCard = {id: this.nextId()};
+    var newItem = {id: this.nextId()};
 
-    this.allCards.push(newCard);
-    return newCard;
+    this.all().push(newItem);
+    return newItem;
 }
 
+//
+// Has Many Tasks
+//
+Card.tasks = function(card_id) {
+    return Task.findByCardId(card_id);
+}
 Card.createTask = function(card_id, title) {
-    var newTask = Task.create({card_id: card_id, title: title});
-    return newTask;
+    var newItem = Task.create({card_id: card_id, title: title});
+    return newItem;
 }
 

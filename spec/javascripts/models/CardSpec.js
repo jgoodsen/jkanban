@@ -1,19 +1,19 @@
 describe("The Card Model", function() {
 
     beforeEach(function() {
-        Card.allCards = ProjectFixtures.simpleProjectJson.cards;
+        loadSimpleProjectJsonFixtures();
     });
 
 
-    describe("findById", function() {
+    describe("findById()", function() {
 
-        it("Card.findById() should find aN existing card", function() {
+        it("should find aN existing card", function() {
             var card = Card.findById(100);
             expect(card).toBeTruthy();
             expect(card.id).toEqual(100);
         });
 
-        it("Card.findById() should return undefined for an unexisting card", function() {
+        it("should return undefined for an unexisting card", function() {
             var card = Card.findById(0);
             expect(card).toEqual(undefined);
         });
@@ -55,16 +55,14 @@ describe("The Card Model", function() {
         });
     });
 
-    xdescribe("array assumptions", function() {
-
-        it("should support the map() function", function() {
-            var original = [1,2,3,4,5,6,7,8,9,10];
-            var results = original.map(function(element) {
-                return element * 2;
-            });
-            expect(results).toEqual([2,4,6,8,10,12,14,16,18,20]);
+    describe("tasks()", function() {
+        it("should return only the tasks assigned to this card", function() {
+            expect(Card.tasks(100).length).toEqual(4);
+            expect(Card.tasks(101).length).toEqual(4);
         });
-
-    });
+        it("should return empty array if not tasks found", function() {
+            expect(Card.tasks(-999).length).toEqual(0);
+        });
+    })
 
 });

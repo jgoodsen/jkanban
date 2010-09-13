@@ -23,6 +23,8 @@
     <!-- include source files here... -->
     <script type="text/javascript" src="../../public/javascripts/models/User.js"></script>
     <script type="text/javascript" src="../../public/javascripts/models/Card.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/models/Task.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/models/Project.js"></script>
     <script type="text/javascript" src="../../public/javascripts/KanbanBoard.js"></script>
     <script type="text/javascript" src="../../public/javascripts/KanbanCard.js"></script>
     <script type="text/javascript" src="../../public/javascripts/SwimLane.js"></script>
@@ -36,6 +38,7 @@
 
     <script type="text/javascript">
         $(function() {
+            loadSimpleProjectJsonFixtures();
             $('#content').KanbanBoard(BoardFixtures.simpleBoardConfig)
         })
     </script>

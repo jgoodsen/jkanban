@@ -2,19 +2,16 @@ $.fn.AddSwimLane = function(options) {
 
     var defaults = {
         swimlane: null,
-        cards: [],
-        users: [],
         swimlaneAssignments: []
     };
     var opts = $.extend(defaults, options);
     var self = $(this);
 
     var content = $('<div class="kanban_swimlane_content"/>');
-    $.each(opts.cards, function(i, card_json) {
+    $.each(Card.all(), function(i, card_json) {
         if (isCardAssignedToThisSwimlane(card_json)) {
             content.AddKanbanCard({
-                card: card_json,
-                users: opts.users
+                card: card_json
             });
         }
     })

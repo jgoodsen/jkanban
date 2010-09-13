@@ -2,15 +2,24 @@ function User() {
 
 }
 
-User.findById = function(id, users_json) {
-  if (users_json.length == 0)
-      throw "empty users_json";
+User.allItems = [];
 
-  var foundUser;
-  $.each(users_json, function(i, user) {
-    if (user.id == id) {
-      foundUser = user;
-    }
-  });
-  return foundUser;
+User.findById = function(id) {
 }
+
+User.all = function() {
+    return this.allItems;
+}
+
+User.last = function() {
+    var last;
+    this.all().forEach(function(c) {
+        last = c;
+    });
+    return last;
+}
+
+User.findById = function(id) {
+    return this.all().filter(function(item){ return item.id == id;})[0];
+}
+

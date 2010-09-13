@@ -468,12 +468,12 @@
         }
 
         return this.ajaxFormUnbind().bind('submit.form-plugin',
-                                         function(e) {
-                                             if (!e.isDefaultPrevented()) { // if event has been canceled, don't proceed
-                                                 e.preventDefault();
-                                                 $(this).ajaxSubmit(options);
-                                             }
-                                         }).bind('click.form-plugin', function(e) {
+                function(e) {
+                    if (!e.isDefaultPrevented()) { // if event has been canceled, don't proceed
+                        e.preventDefault();
+                        $(this).ajaxSubmit(options);
+                    }
+                }).bind('click.form-plugin', function(e) {
             var target = e.target;
             var $el = $(target);
             if (!($el.is(":submit,input:image"))) {
@@ -506,7 +506,7 @@
         });
     };
 
-// ajaxFormUnbind unbinds the event handlers that were bound by ajaxForm
+    // ajaxFormUnbind unbinds the event handlers that were bound by ajaxForm
     $.fn.ajaxFormUnbind = function() {
         return this.unbind('submit.form-plugin click.form-plugin');
     };
@@ -781,8 +781,8 @@
         });
     };
 
-// helper fn for console logging
-// set $.fn.ajaxSubmit.debug to true to enable debug logging
+    // helper fn for console logging
+    // set $.fn.ajaxSubmit.debug to true to enable debug logging
     function log() {
         if ($.fn.ajaxSubmit.debug) {
             var msg = '[jquery.form] ' + Array.prototype.join.call(arguments, '');
@@ -1480,8 +1480,7 @@ function hasContent(something) {
 $.fn.AddKanbanCard = function(options) {
 
     var defaults = {
-        card: null,
-        users: []
+        card: null
     };
     var opts = $.extend(defaults, options);
 
@@ -1496,7 +1495,7 @@ $.fn.AddKanbanCard = function(options) {
 
     var gravatars = $('<div class="kanban_card_gravatars"/>');
     $.each(opts.card.owners, function(i, owner_id) {
-        var owner = User.findById(owner_id, opts.users);
+        var owner = User.findById(owner_id);
         gravatars.append('<img class="gravatar"  src="' + get_gravatar(owner, 30) + '" title="' + fullName(owner) + '"/>');
     })
     if (gravatars.children().size() == 0) {
@@ -1544,11 +1543,9 @@ $.fn.AddKanbanCard = function(options) {
         // Tasks Tab
         //
         var tasks_tab_content = $('<div class="tasks"/>');
-        if (opts.card.tasks != undefined) {
-            $.each(opts.card.tasks, function(i, task) {
-                tasks_tab_content.append(makeTask(task));
-            })
-        }
+        $.each(Card.tasks(opts.card.id), function(i, task) {
+            tasks_tab_content.append(makeTask(task));
+        })
 
         // New Task Form
         var newTaskInput = $('<input class="kanban_card_new_task" value="<Add a new task>"/>');
@@ -1579,9 +1576,9 @@ $.fn.AddKanbanCard = function(options) {
     self.append(html);
 
 
-//
-// Hover Actions
-//
+    //
+    // Hover Actions
+    //
     var hoverActive = false; //  A hack - the mouse-enter was getting triggered inside its drag event
     html.mouseenter(function() {
         if (!hoverActive) {
@@ -1602,9 +1599,9 @@ $.fn.AddKanbanCard = function(options) {
     })
 
 
-//
-// PRIVATE METHODS
-//
+    //
+    // PRIVATE METHODS
+    //
     function fullName(user) {
         return user.firstName + " " + user.lastName;
     }
