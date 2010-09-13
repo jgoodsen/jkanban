@@ -3,7 +3,7 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" git="false" />
+        <dependency name="rails" version="0" bound="GREATER_OR_EQUAL" />
       </requirement>
       <source from="config/boot.rb" />
     </requirement>

@@ -14,4 +14,4 @@ describe("User", function() {
         expect(user.id).toEqual(10);
     })
 
-})
+});
