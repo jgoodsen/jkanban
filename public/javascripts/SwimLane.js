@@ -24,7 +24,7 @@ $.fn.AddSwimLane = function(options) {
     });
 
 
-    var swimlane = $('<div class="kanban_swimlane"/>');
+    var swimlane = $('<div class="kanban_swimlane {id:' + opts.swimlane.id + '}"/>');
     var header = $('<div class="kanban_swimlane_header"/>');
     header.append('<span>' + opts.swimlane.name + '</span>');
     var wip_limit = $('<div class="wip_limit">' + opts.swimlane.wip_limit + '</div>');
@@ -55,7 +55,20 @@ $.fn.AddSwimLane = function(options) {
     }
 
     function CardDragged(x, ui) {
-
+        //        var card_id = $(ui.item).attr('id').replace(/[^\d]+/g, '');
+        //        var sibling_cards = $(ui.item).siblings('.kanban_card');
+        //        var position = ui.item.prevAll().length;
+        //        var card_state = ui.item.parent().attr("id");
+//        var to_cards = $('#' + card_state).sortable("serialize");
+//        $.post(project_kanban_card_dropped_path(project_id), {
+//            'authenticity_token': window._auth_token,
+//            'card_id': card_id,
+//            'position': position,
+//            'card_state': card_state,
+//            'cards': to_cards
+//        });
+//        $(ui.item).fadeIn();
+//        updateWipLimitFeedback();
     }
 
     ;

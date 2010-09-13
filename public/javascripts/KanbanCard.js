@@ -1485,7 +1485,7 @@ $.fn.AddKanbanCard = function(options) {
     var opts = $.extend(defaults, options);
 
     var self = $(this);
-    var html = $('<div class="kanban_card"/>');
+    var html = $('<div class="kanban_card {id:' + opts.card.id + '}"/>');
 
     //
     // Card Header
