@@ -93,7 +93,7 @@
     position: relative;
     top: 0px;
     left: 20px;
-    height: 30px;
+    height: 25px;
     background:transparent;
     z-index:100;
 }
@@ -147,13 +147,30 @@
 }
 
 .kanban_card_header .expand_collapse_arrow {
-    margin-left: 0px;
-    margin-top: 24px;
+    margin-left: 4px;
+    margin-top: 8px;
 }
 
-.kanban_card_header .grippy {
-    margin-left: 4px;
+.grippy {
+    text-indent:-999em;
+    background: transparent url(grippy.png) repeat-x scroll 0 0px;
+    cursor: pointer;
+    width: 6px;
+    height: 14px;
+    float: left;
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.kanban_card_title .grippy {
+    margin-right: 4px;
     margin-top: 4px;
+    background: transparent url(grippy.png) repeat-y scroll 0 -1px;
+    height: 28px;
+}
+.kanban_card_task .grippy {
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 0px;
 }
 
 .kanban_card_gravatars {
@@ -168,19 +185,20 @@
 }
 
 .unknown_gravatar {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 23px;
     border: 1px #aaa solid;
-    font-size: 1.8em;
+    font-size: 1.4em;
     text-align: center;
     padding-top: 4px;
 }
 
 .kanban_card_body {
-    min-height: 60px;
+    min-height: 20px;
     background: #FFFFFF;
     float: left;
     border-top: 1px dashed #aaa;
+    padding-top: 4px;
 }
 
 .kanban_card_task {
@@ -188,19 +206,12 @@
     color: #777;
     float: left;
     width: 100%;
-    background: #FFFFFF;
 }
 
-.grippy {
-    text-indent:-999em;
-    background: transparent url(grippy.png) repeat-x scroll 0 0;
-    cursor: pointer;
-    width: 6px;
-    height: 14px;
-    float: left;
-    margin-right: 2px;
-    margin-left: 2px;
+.kanban_card_task.task_hover {
+    background: #f3f3f3;
 }
+
 .kanban_card_task .state {
     width: 20px;
     height: 20px;
@@ -220,6 +231,10 @@
     float: left;
 }
 
+.kanban_card_body_tasks {
+    min-height: 8px;
+}
+
 .no_task_owner {
     width: 18px;
     height: 18px;
@@ -231,7 +246,7 @@
 }
 
 .kanban_card_task .title.editInPlace-active input {
-    width: 180px;
+    width: 170px;
 }
 
 .task_state_started {
@@ -251,7 +266,7 @@
 }
 
 .kanban_card_task .title {
-    width: 185px;
+    width: 180px;
     float: left;
 }
 
@@ -271,7 +286,7 @@
 
 .collapse {
     background-position: right center;
-    background: transparent url(expand-collapse.png) no-repeat scroll right center;
+    background: transparent url(expand-collapse.png)     no-repeat scroll right center;
 }
 
 .expand, .collapse {
