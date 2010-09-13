@@ -1559,8 +1559,11 @@ $.fn.AddKanbanCard = function(options) {
             form.before(makeTask(task));
             newTaskInput.val('');
         });
-        tasks_tab_content.append(form);
+        var outer = $('<div/>');
+        outer.append(tasks_tab_content);
+        outer.append(form);
 
+        body.append(outer);
     }
     tasks_tab_content.sortable({
         handle : '.grippy',
@@ -1569,8 +1572,6 @@ $.fn.AddKanbanCard = function(options) {
             var order = tasks_tab_content.sortable('serialize');
         }
     });
-
-    body.append(tasks_tab_content);
 
     html.append(body);
     self.append(html);
