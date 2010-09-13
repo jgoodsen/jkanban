@@ -1,3 +1,4 @@
 .idea/workspace.xml
 log
 .idea/.rakeTasks
+db/*.sqlite3

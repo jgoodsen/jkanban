@@ -135,7 +135,7 @@
     width:230px;
 }
 
-.kanban_card_title .title.editInPace-active textarea {
+.kanban_card_title .title.editInPlace-active textarea {
     font-size: 1em;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
@@ -309,11 +309,14 @@
 }
 
 .dashboard .project .name {
-    font-size: 18px;
+    font-size: 16px;
 }
 .dashboard .project .name.editInPlace-active input {
-    font-size: 18px;
+    font-size: 16px;
+    width: 98%;
 }
-.dashboard .project .description {
-    height: 100px;
+.dashboard .project .description.editInPlace-active textarea {
+    font-size: 10px;
+    height: 60px;
+    width: 98%;
 }

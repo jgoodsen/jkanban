@@ -5,15 +5,15 @@ $.fn.EnterpriseDashboard = function(options) {
     var dashboard = $('<div class="dashboard"/>');
     self.append(dashboard);
     var projects = $('<div class="projects"/>');
-    Project.all().forEach(function(p) {
-        var projectHtml = $('<div class="project {id:' + p.id + '}"/>');
+    Project.all().forEach(function(project) {
+        var projectHtml = $('<div class="project {id:' + project.id + '}"/>');
 
-        var projectName = $('<div class="name">' + p.name + '</div>');
-        textField(p, projectName, "name", 'Enter project name...', 'text');
+        var projectName = $('<div class="name">' + project.name + '</div>');
+        railsInlineTextField(project, projectName, "name", 'Enter project name...', 'text');
         projectHtml.append(projectName);
 
-        var projectDescription = $('<div class="description">' + p.description + '</div>');
-        textField(p, projectDescription, "description", 'Enter project description...', 'textarea');
+        var projectDescription = $('<div class="description">' + project.description + '</div>');
+        railsInlineTextField(project, projectDescription, "description", 'Enter project description...', 'textarea');
         projectHtml.append(projectDescription);
 
         projects.append(projectHtml);
@@ -25,20 +25,20 @@ $.fn.EnterpriseDashboard = function(options) {
 }
 
 // A generic inline edit in place handler - pops up an alert for each error
-function textField(projectJson, projectName, fieldName, defaultText, fieldType) {
-    projectName.editInPlace({
+function railsInlineTextField(projectJson, jqueryComponent, fieldName, defaultText, fieldType) {
+    jqueryComponent.editInPlace({
         callback: function(notused, newValue, oldValue) {
             return Project.updateAttribute(projectJson, fieldName, newValue,
                     function(successResponse) {
                         var successValue = successResponse[fieldName];
                         if (successValue == "") {
-                             projectName.text(defaultText);
+                             jqueryComponent.text(defaultText);
                         } else {
-                            projectName.text(successValue);
+                            jqueryComponent.text(successValue);
                         }
                     },
                     function(errorResponse) {
-                        projectName.text(oldValue);        // restore the field value
+                        jqueryComponent.text(oldValue);        // restore the field value
                         projectJson[fieldName] = oldValue; // restore the json value 
                         var responseArray = JSON.parse(errorResponse);
                         responseArray.forEach(function(msg) {
