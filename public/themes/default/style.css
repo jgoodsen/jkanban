@@ -284,3 +284,36 @@
     text-indent: -999em;
     width: 12px;
 }
+
+
+.dashboard {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    float: left;
+}
+
+.dashboard .project {
+    -moz-border-radius-bottomleft: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    float: left;
+    margin: 6px;
+    width: 200px;
+    min-height: 200px;
+    padding: 6px;
+}
+
+.dashboard .project .name {
+    font-size: 18px;
+}
+.dashboard .project .name.editInPlace-active input {
+    font-size: 18px;
+}
+.dashboard .project .description {
+    height: 100px;
+}

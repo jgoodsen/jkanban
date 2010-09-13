@@ -1,20 +1,37 @@
-<h1>Listing projects</h1>
+<div id="dashboard_container">
 
-<table>
-  <tr>
-    <th>Name</th>
-  </tr>
+    <h1>Listing projects</h1>
 
-<% @projects.each do |project| %>
-  <tr>
-    <td><%=h project.name %></td>
-    <td><%= link_to 'Show', project %></td>
-    <td><%= link_to 'Edit', edit_project_path(project) %></td>
-    <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
 
-<br />
+        <% @projects.each do |project| %>
+            <tr>
+                <td><%= h project.name %></td>
+                <td><%= h project.description %></td>
+                <td><%= link_to 'Show', project %></td>
+                <td><%= link_to 'Edit', edit_project_path(project) %></td>
+                <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
+            </tr>
+        <% end %>
+    </table>
 
-<%= link_to 'New project', new_project_path %>
+    <br/>
+
+    <%= link_to 'New project', new_project_path %>
+
+</div>
+
+
+<script type="text/javascript">
+    $(function() {
+        $('body').bind("Project.ProjectsLoaded", function() {
+            $('#content').EnterpriseDashboard();
+        });
+        Project.loadAllProjects();
+    });
+</script>
+

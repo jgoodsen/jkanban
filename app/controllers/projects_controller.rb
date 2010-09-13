@@ -5,14 +5,16 @@ class ProjectsController < ApplicationController
     @projects = Project.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html { render :layout => 'dashboard'}
       format.xml  { render :xml => @projects }
+      format.json { render :json => @projects }
     end
   end
 
   # GET /projects/1
   # GET /projects/1.xml
   def show
+
     @project = Project.find(params[:id])
 
     respond_to do |format|
@@ -57,6 +59,7 @@ class ProjectsController < ApplicationController
   # PUT /projects/1
   # PUT /projects/1.xml
   def update
+
     @project = Project.find(params[:id])
 
     respond_to do |format|
@@ -64,9 +67,11 @@ class ProjectsController < ApplicationController
         flash[:notice] = 'Project was successfully updated.'
         format.html { redirect_to(@project) }
         format.xml  { head :ok }
+        format.json  { render :json => @project }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @project.errors, :status => :unprocessable_entity }
+        format.json  { render :json => @project.errors, :status => :unprocessable_entity }
       end
     end
   end

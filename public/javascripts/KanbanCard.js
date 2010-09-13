@@ -846,9 +846,9 @@ $.fn.editInPlace = function(options) {
         var dom = $(this);
         // This won't work with live queries as there is no specific element to attach this
         // one way to deal with this could be to store a reference to self and then compare that in click?
-        if (dom.data('editInPlace'))
+        if (dom.data('textField'))
             return; // already an editor here
-        dom.data('editInPlace', true);
+        dom.data('textField', true);
 
         new InlineEditor(settings, dom).init();
     });
@@ -980,7 +980,7 @@ $.extend(InlineEditor.prototype, {
 
     disconnectOpeningEvents: function() {
         // prevent re-opening the editor when it is already open
-        this.dom.unbind('.editInPlace');
+        this.dom.unbind('.textField');
     },
 
     addHoverEffect: function() {

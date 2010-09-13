@@ -9,13 +9,16 @@
 
     <!-- include jquery ui here... -->
     <script type="text/javascript" src="../../public/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js"></script>
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery.editinplace.js">
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery.clearonfocus.js">
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery.form.js">
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery.metadata.js">
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/json2.js">
-    <script type="text/javascript" src="../../public/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
-    <link type="text/css" rel="stylesheet" media="screen" href="../../public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
+    <script type="text/javascript" src="../../public/lib/jquery.editinplace.js"></script>
+    <script type="text/javascript" src="../../public/lib/jquery.clearonfocus.js"></script>
+    <script type="text/javascript" src="../../public/lib/jquery.form.js"></script>
+    <script type="text/javascript" src="../../public/lib/jquery.metadata.js"></script>
+    <script type="text/javascript" src="../../public/lib/json2.js"></script>
+    <script type="text/javascript"
+            src="../../public/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" media="screen"
+          href="../../public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
 
 
     <!-- include helper files here... -->
@@ -30,6 +33,7 @@
     <script type="text/javascript" src="../../public/javascripts/KanbanBoard.js"></script>
     <script type="text/javascript" src="../../public/javascripts/KanbanCard.js"></script>
     <script type="text/javascript" src="../../public/javascripts/SwimLane.js"></script>
+    <script type="text/javascript" src="../../public/javascripts/EnterpriseDashboard.js"></script>
 
     <!-- 
 
@@ -39,11 +43,11 @@
     -->
 
     <script type="text/javascript">
-        $(function() {
-            loadSimpleProjectJsonFixtures();
-            $('#content').KanbanBoard(BoardFixtures.simpleBoardConfig)
-        })
-    </script>
+                $(function() {
+                    loadSimpleProjectJsonFixtures();
+                    $('#content').KanbanBoard(BoardFixtures.simpleBoardConfig)
+                })
+     </script>
     <style type="text/css">
         #content {
             float: left;

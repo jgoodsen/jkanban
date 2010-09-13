@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link type="text/css" rel="stylesheet" media="screen" href="/themes/default/style.css?2dds3dddf4">
+
+
+    <!-- include jquery ui here... -->
+    <script type="text/javascript" src="/lib/jquery-ui-1.8.4.custom/js/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="/lib/jquery.editinplace.js"></script>
+    <script type="text/javascript" src="/lib/jquery.clearonfocus.js"></script>
+    <script type="text/javascript" src="/lib/jquery.form.js"></script>
+    <script type="text/javascript" src="/lib/jquery.metadata.js"></script>
+    <script type="text/javascript" src="/lib/json2.js"></script>
+    <script type="text/javascript"
+            src="/lib/jquery-ui-1.8.4.custom/js/jquery-ui-1.8.4.custom.min.js"></script>
+
+
+
+    <link type="text/css" rel="stylesheet" media="screen"
+          href="../../public/lib/jquery-ui-1.8.4.custom/css/ui-lightness/jquery-ui-1.8.4.custom.css">
+
+
+    <!-- include helper files here... -->
+    <script type="text/javascript" src="/lib/MD5.js"></script>
+
+    <!-- include source files here... -->
+    <script type="text/javascript" src="/javascripts/models/User.js"></script>
+    <script type="text/javascript" src="/javascripts/models/Card.js"></script>
+    <script type="text/javascript" src="/javascripts/models/Task.js"></script>
+    <script type="text/javascript" src="/javascripts/models/Project.js"></script>
+    <script type="text/javascript" src="/javascripts/KanbanBoard.js"></script>
+    <script type="text/javascript" src="/javascripts/KanbanCard.js"></script>
+    <script type="text/javascript" src="/javascripts/SwimLane.js"></script>
+    <script type="text/javascript" src="/javascripts/EnterpriseDashboard.js"></script>
+
+    <!--
+
+    Look into using http://requirejs.org/docs/jquery.html or http://plugins.jquery.com/project/require
+    to cleanup js lib inclusion
+
+    -->
+
+    <style type="text/css">
+        #content {
+            float: left;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="content">
+
+  <%= yield %>
+
+</div>
+
+</body>
+</html>
+  

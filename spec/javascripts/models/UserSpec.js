@@ -1,4 +1,4 @@
-describe("User", function() {
+describe("The User Model", function() {
 
     beforeEach(function() {
         loadSimpleProjectJsonFixtures();
