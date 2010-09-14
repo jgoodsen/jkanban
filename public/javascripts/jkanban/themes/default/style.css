@@ -167,6 +167,12 @@
     background: transparent url(grippy.png) repeat-y scroll 0 -1px;
     height: 28px;
 }
+
+.kanban_card_title .title textarea {
+    height: 60px;
+    width: 225px;
+}
+
 .kanban_card_task .grippy {
     margin-left: 4px;
     margin-right: 4px;
@@ -216,6 +222,7 @@
     width: 20px;
     height: 20px;
     float: left;
+    cursor: pointer;
 }
 
 .kanban_card_task .owner {
@@ -247,6 +254,7 @@
 
 .kanban_card_task .title.editInPlace-active input {
     width: 170px;
+    height: 100px;
 }
 
 .task_state_started {
@@ -266,6 +274,11 @@
 }
 
 .kanban_card_task .title {
+    width: 180px;
+    float: left;
+}
+
+.kanban_card_task .title  {
     width: 180px;
     float: left;
 }

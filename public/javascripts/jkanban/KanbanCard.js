@@ -133,9 +133,22 @@ $.fn.AddKanbanCard = function(options) {
     }
 
     function makeTask(task) {
-        var tsskHtml = $('<div class="kanban_card_task {id:"' + task.id + '}"/>');
-        tsskHtml.append($('<span class="grippy task_grippy"/>'));
-        tsskHtml.append($('<span class="state"/>').addClass(classForImageState(task.state)));
+
+        var taskHtml = $('<div class="kanban_card_task {id:"' + task.id + '}"/>');
+        taskHtml.append($('<span class="grippy task_grippy"/>'));
+
+
+        var stateIndicator = $('<span class="state {state:' + task.state + '}" title="Click to change the task state"/>').addClass(classForImageState(task.state));
+        var task_id = task.id;
+        var task_state = task.state;
+        stateIndicator.click(function() {
+            $(this).removeClass(classForImageState(task_state));
+            task_state = ((task_state+1) % 3);
+            $(this).addClass(classForImageState(task_state));
+        });
+        taskHtml.append(stateIndicator);
+
+
         function imageForTaskOwner(task, i) {
             if (task.owners[i] != undefined) {
                 var user = User.findById(task.owners[i], opts.users);
@@ -145,22 +158,22 @@ $.fn.AddKanbanCard = function(options) {
             }
         }
 
-        tsskHtml.append($('<span class="owner"/>').html(imageForTaskOwner(task, 0)));
-        tsskHtml.append($('<span class="owner"/>').html(imageForTaskOwner(task, 1)));
-        tsskHtml.append('<div class="title"/>');
-        tsskHtml.find('.title').html(task.title).editInPlace({
+        taskHtml.append($('<span class="owner"/>').html(imageForTaskOwner(task, 0)));
+        taskHtml.append($('<span class="owner"/>').html(imageForTaskOwner(task, 1)));
+        taskHtml.append('<div class="title"/>');
+        taskHtml.find('.title').html(task.title).editInPlace({
             callback: function(unused, enteredText) {
                 return enteredText;
             }
         });
-        tsskHtml.mouseenter(function() {
+        taskHtml.mouseenter(function() {
             $(this).addClass("task_hover");
         })
-        tsskHtml.mouseleave(function() {
+        taskHtml.mouseleave(function() {
             $(this).removeClass("task_hover");
         })
 
-        return tsskHtml;
+        return taskHtml;
     }
 
     function get_gravatar(user, size) {
