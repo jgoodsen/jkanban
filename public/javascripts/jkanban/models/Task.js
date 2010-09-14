@@ -31,7 +31,7 @@ Task.nextId = function() {
 Task.create = function(opts) {
 
     // TODO: Implement Service call and broadcast the event
-    var newTask = {id: this.nextId(), card_id: opts.card_id, title: opts.title, owners: []};
+    var newTask = {id: this.nextId(), card_id: opts.card_id, title: opts.title, owners: [], state: 0};
 
     this.all().push(newTask);
     return newTask;
