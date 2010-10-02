@@ -1,8 +1,13 @@
+require 'spec_helper'
+
 describe "Project" do
 
-  it "should fail" do
-    1.should == 2
+  describe "save" do
+
+    it "should not allow non-blank names" do
+      p = Project.new
+      p.save.should == false
+    end
+
   end
-
 end
-
