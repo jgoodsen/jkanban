@@ -16,6 +16,8 @@ $.fn.EnterpriseDashboard = function(options) {
         railsInlineTextField(project, projectDescription, "description", 'Enter project description...', 'textarea');
         projectHtml.append(projectDescription);
 
+        projectHtml.append("hello");
+
         projects.append(projectHtml);
     });
     dashboard.append(projects);
