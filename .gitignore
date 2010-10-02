@@ -1,5 +1,4 @@
-.idea/workspace.xml
-log
-.idea/.rakeTasks
+.bundle
 db/*.sqlite3
-dist
+log/*.log
+tmp/**/*

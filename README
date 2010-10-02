@@ -24,6 +24,8 @@ To package up and distribute just the jKanban javascript as a package to use in 
 
 and then you'll have a dist/jkanban.tgz in the dist/ directory that you can distribute.
 
+ActiveRecord::Base.include_root_in_json = false
+
 
 
 Copyright (C) 2010, John Goodsen.  All Rights Reserved.
