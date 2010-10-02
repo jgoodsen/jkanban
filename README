@@ -24,8 +24,15 @@ To package up and distribute just the jKanban javascript as a package to use in 
 
 and then you'll have a dist/jkanban.tgz in the dist/ directory that you can distribute.
 
+
 ActiveRecord::Base.include_root_in_json = false
 
+=======
+-- Rails    --
+To start up the back end Rails JSON server you will need to execute these commands:
+>>>>>>> 697d14e2894d877f9d599b2e8be462be7258a70e
 
+gem install bundler
+bundle install
+rake db:create:all
 
-Copyright (C) 2010, John Goodsen.  All Rights Reserved.
