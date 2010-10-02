@@ -2,8 +2,5 @@
 db/*.sqlite3
 log/*.log
 tmp/**/*
-<<<<<<< HEAD
-=======
 .idea
 dist
->>>>>>> 697d14e2894d877f9d599b2e8be462be7258a70e
