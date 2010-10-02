@@ -1,30 +1,3 @@
-# Filters added to this controller apply to all controllers in the application.
-# Likewise, all the methods added will be available for all controllers.
-
 class ApplicationController < ActionController::Base
-  helper :all # include all helpers, all the time
-  protect_from_forgery # See ActionController::RequestForgeryProtection for details
-
-  # Scrub sensitive parameters from your log
-  # filter_parameter_logging :password
-
-  ##
-  ## TODO: Remove these on Rails 3 Uprade
-  ##
-  # These settings change the behavior of Rails 2 apps and will be defaults
-  # for Rails 3. You can remove this initializer when Rails 3 is released.
-
-  # Include Active Record class name as root for JSON serialized output.
-  ActiveRecord::Base.include_root_in_json = false
-
-  # Store the full class name (including module namespace) in STI type column.
-  ActiveRecord::Base.store_full_sti_class = true
-
-  # Use ISO 8601 format for JSON serialized times and dates.
-  ActiveSupport.use_standard_json_time_format = true
-
-  # Don't escape HTML entities in JSON, leave that for the #json_escape helper.
-  # if you're including raw json in an HTML page.
-  ActiveSupport.escape_html_entities_in_json = false
-  
+  protect_from_forgery
 end

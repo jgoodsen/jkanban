@@ -24,6 +24,10 @@ To package up and distribute just the jKanban javascript as a package to use in 
 
 and then you'll have a dist/jkanban.tgz in the dist/ directory that you can distribute.
 
+-- Rails    --
+To start up the back end Rails JSON server you will need to execute these commands:
 
+gem install bundler
+bundle install
+rake db:create:all
 
-Copyright (C) 2010, John Goodsen.  All Rights Reserved.
