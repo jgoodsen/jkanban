@@ -10,4 +10,14 @@ describe "Project" do
     end
 
   end
+
+ describe "boards" do
+    it "should have a default board" do
+      p = Project.new
+      p.default_board.should_not be_nil
+    end
+
+
+ end
+
 end
